@@ -1,9 +1,9 @@
 # Game Ping-Pong
-
-from tkinter import *
+#Estudando o cógigo
+from tkinter import * #importação de bibliotecas
 import random
 import time
-
+#Entrada de varáveis com imput e atribuição
 level = int(input("Qual nível você gostaria de jogar? 1/2/3/4/5 \n"))
 length = 500/level
 
@@ -21,7 +21,7 @@ root.update()
 # Variável
 count = 0
 lost = False
-
+#Classe e funções, condicionais e operações matematicas
 class Bola:
     def __init__(self, canvas, Barra, color):
         self.canvas = canvas
@@ -112,7 +112,7 @@ class Barra:
         if self.pos[2] <= self.canvas_width:
             self.x = 3
 
-
+#funções
 def start_game(event):
     global lost, count
     lost = False
